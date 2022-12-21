@@ -212,6 +212,7 @@ import {
   RawWidgetData,
   RawWidgetMemberData,
 } from './rawDataTypes';
+import type { Agent } from 'http';
 
 declare module 'node:events' {
   class EventEmitter {
@@ -6223,6 +6224,7 @@ export interface WebSocketOptions {
   compress?: boolean;
   properties?: WebSocketProperties;
   version?: number;
+  agent?: Agent;
 }
 
 export interface WebSocketProperties {
